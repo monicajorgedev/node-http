@@ -1,5 +1,5 @@
 const http = require ('node:http')
-const {objeto} = require('./data.js')
+const obj = require('./data.js')
 
 const server = http.createServer((req,res) => {
     res.end(`
@@ -8,11 +8,11 @@ const server = http.createServer((req,res) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>${objeto.title}</title>
+        <title>${obj.title}</title>
     </head>
     <body>
-        <h1>${objeto.subtitle}</h1>
-        <p>${objeto.p}</p>
+        <h1>${obj.subtitle}</h1>
+        <p>${obj.p}</p>
     </body>
     </html>
 `)        
