@@ -18,6 +18,15 @@ const server = http.createServer((req,res) => {
 `)        
 })
 
+
+const PORT = 3000
+
+server.listen(PORT, ()=> {
+    console.log(`server listening on port http://localhost:${PORT}`)
+})
+
+/*
 server.listen(0, ()=> {
     console.log(`server listening on port http://localhost:${server.address().port}`)
 })
+*/
